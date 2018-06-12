@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="Keywords" content="丝绸之路"/>
+    <meta name="Description" content="中国,国家旅游局,丝绸之路,2015丝绸之路旅游年"/>
+    <meta name="Copyright" content="版权归作者所有,抄袭无效"/>
+    <title>美丽中国</title>
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.2/??flexible_css.js,flexible.js"></script>
+     <link rel="stylesheet" type="text/css" href="css/swiper-3.3.1.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!--============ 页面（1）----------- -->
+            <div class="swiper-slide wrap-1">
+             <!-- 进度条的制作 -->
+              <div class="wrap-1 wrap-progress" id="wrap-progress">
+               <div class="main-progress">
+                 <div class="progress">
+                     <div class="center-progress" id="proress-bar"></div>
+                 </div>
+                 <span id="show-num">0%</span>
+               </div>
+               <!-- 进度条的制作 -->
+             </div>
+              <div class="cloud">
+                 <img class="left-cloud" src="images/leftCloud.png" alt="左边的云朵" />  
+                 <img class="right-cloud" src="images/rightCloud.png" alt="右边的云朵" />  
+              </div>
+              <div class="wrap-1-top">
+                  <img src="images/logo.png" alt="美丽中国"/>  
+              </div>
+              <div class="wrap-1-center">
+                 <ul>
+                     <li class="center-font"><h2>Beautiful China</h2></li>
+                     <li>2015</li>
+                     <li class="center-font"><h2>Year of Silk Road Tourism</h2></li>
+                     <li><h4>美丽中国—2015 丝绸之路旅游年</h4></li>
+                 </ul>
+              </div>
+              <div class="wrap-1-bottom">
+                  <p>中国国家旅游局</p>
+                  <h3 class="center-font">China National Tourism Administration</h3>
+                 <img class="topscroll" src="images/toprow.png"/>
+              </div>
+
+            </div>
+
+            <!-- 页面（2） -->
+            <div class="swiper-slide wrap-2 common-back">
+                <div class="wrap-2-center">
+                  <img class="beau-china" src="images/content.png" alt="美丽中国"/>             
+                </div>
+                <canvas id="canvas">
+                    
+                </canvas>
+
+            </div>
+            <!-- 页面三 -->
+            <div class="swiper-slide wrap-3 common-back">
+                <div class="wrap-3-header">
+                     <div class="v-line" id="vLine"></div>
+                     <img src="images/small-circle.png"/>
+                </div>
+                <div class="wrap-3-content" id="wrapTcontent">
+                   <img id="wrapTcontentimg" src="images/main-images.png" alt="主形象页面"/>
+                </div>
+            </div>
+            <!-- 页面（四）和 页面（2）相同 海报标题-->
+            <div class="swiper-slide wrap-4 common-back">
+                <div class="wrap-4-center">
+                  <img class="main-poster" src="images/page4_main.png" alt="美丽中国"/> 
+                </div>
+                <div class="main-year">
+                   <img class="year" src="images/p2_2015.png" alt="美丽中国"/> 
+                </div>
+                <canvas id="canvas2">
+                    
+                </canvas>
+            </div>
+            <!-- 页面（五）主海报内容 -->
+            <div class="swiper-slide wrap-5 common-back" id="wrapFive">
+                 <div class="wrap-3-header">
+                     <div class="v-line" id="vLine"></div>
+                     <img src="images/small-circle.png"/>
+                </div>
+                <div class="wrap-3-content" id="wrapTcontent">
+                   <img id="wrapFcontentimg" src="images/haibao.png" alt="海报内容"/>
+                </div> 
+            </div>
+            <!-- 系列海报 和2、4一样 -->
+            <div class="swiper-slide wrap-6 common-back">
+                <div class="wrap-6-center">
+                  <img class="main-poster" src="images/page6_main.png" alt="美丽中国"/>             
+                </div>
+                 <div class="main-yearS">
+                   <img class="year" src="images/p2_2015.png" alt="美丽中国"/> 
+                </div>
+                <canvas id="canvas3">
+                    
+                </canvas>
+            </div>
+            <!--系列海报内容 -->
+            <div class="swiper-slide wrap-7 common-back" id="wrapSeven">
+                <div class="backBlack" style="display:none;" id="backBlack">
+                    <div class="canaleSelect">
+                        <span id="btnCancle">X</span>
+                    </div>
+                </div>
+                <div class="wrap-7-left" id="wrapsLeft">
+                  <img src="images/map.png" alt="map"/>
+                  <div class="lineMap" id="lineMap"></div>
+                </div>
+                <div class="wrap-7-center">
+                  <div class="wrapper-content" id="wrappersContent">
+                      <img class="wrap-imgFir" src="images/4重庆海报.jpg" alt="重庆海报" title="重庆海报"/>
+                      <img class="wrap-imgFir" src="images/5新疆海报.jpg" alt="新疆海报" title="新疆海报"/>
+                      <img class="wrap-imgFir" src="images/6云南海报.jpg" alt="云南海报" title="云南海报"/>
+                      <img class="wrap-imgFir" src="images/7浙江海报.jpg" alt="浙江海报" title="浙江海报"/>
+                      <img class="wrap-imgFir" src="images/8上海海报.jpg" alt="上海海报" title="上海海报"/>
+                      <img class="wrap-imgFir" src="images/9四川海报.jpg" alt="四川海报" title="四川海报"/>
+                      <img class="wrap-imgFir" src="images/10福建海报.jpg" alt="福建海报" title="福建海报"/>
+                      <img class="wrap-imgFir" src="images/11广东海报.jpg" alt="广东海报" title="广东海报"/>
+                      <img class="wrap-imgFir" src="images/12江苏海报.jpg" alt="江苏海报" title="江苏海报"/>
+                      <img class="wrap-imgFir" src="images/13宁夏海报.jpg" alt="宁夏海报" title="宁夏海报"/>
+                      <img class="wrap-imgFir" src="images/14青海海报.jpg" alt="青海海报" title="青海海报"/>
+                      <img class="wrap-imgFir" src="images/15山东海报.jpg" alt="山东海报" title="山东海报"/>
+                      <img class="wrap-imgFir" src="images/16陕西海报.jpg" alt="陕西海报" title="陕西海报"/>
+                      <img class="wrap-imgFir" src="images/3甘肃海报.jpg" alt="甘肃海报" title="甘肃海报"/>
+                      <img class="wrap-imgFir" src="images/2河北海报.jpg" alt="河北海报"/>
+                      <img class="wrap-imgFir" src="images/1广西海报.jpg" alt="广西风景区" title="广西风景区"/>
+                  </div>
+                </div>
+            </div>
+            <!-- 宣传海报 -->
+            <!-- 第八个页面 -->
+             <div class="swiper-slide wrap-8 common-back">
+                 <div class="wrap-4-center">
+                     <img class="main-poster" src="images/page8_main.png" alt="美丽中国"/> 
+
+                </div>
+                <div class="main-year main-8-year">
+                    <img class="year" src="images/p2_2015.png" alt="美丽中国"/> 
+                </div>
+                <canvas id="canvas4">
+                    
+                </canvas>
+            </div>
+            <!-- 宣传视频 -->
+             <div class="swiper-slide wrap-9 common-back">
+                 <div class="wrap-9-vedio"> 
+                    <video id="vedio" preload="auto" autoplay controls="controls" poster="">
+                        <source src="images/HTML5的前世今生.mp4" type="video/mp4">你的浏览器不支持视频播放，请下载播放器</source>
+                      </video>
+                   </div> 
+                   <div class="wrap-9-adver">
+                     <img src="images/advers.png" alt="广告说明"/>
+                </div> 
+                 <div class="beautifulChina">
+                    <img src="images/beautifulChina.png" alt="美丽中国"/>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/swiper-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/canvas.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    
+</body>
+</html>

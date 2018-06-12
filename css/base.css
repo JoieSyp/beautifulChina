@@ -1,0 +1,744 @@
+/*共同的属性*/
+.swiper-container{
+	width: 10.0rem;
+	height:100vh;
+}
+.swiper-slide{
+    width: 100%;
+    height: 100%;
+}
+/*.swiper-*/
+/*.header{
+	width: 100%;
+	height: 1.375rem;
+	background: #fff;
+}*/
+
+#wrap-progress{
+	width: 10.0rem;
+	height:100vh;
+   z-index: 200;
+}
+/*---------------------第一个界面--------------*/
+/*--------------------进度条-------------------*/
+.main-progress{
+	position: absolute;
+	top: 50%;
+	left: 2.1875rem;
+	z-index: 10;
+	width:5.625rem;
+	height:0.625rem;
+	overflow: hidden;
+}
+.progress{
+	width:4.6875rem;
+	height:0.15625rem;
+	border: 0.03125rem solid #000;
+	border-radius: 0.0625rem;
+	float: left;
+	position: relative;
+}
+.center-progress{
+	height:0.15625rem;
+    background: blue;
+    float: left;
+    position: absolute;
+    left:0;
+    top: 0;
+}
+#proress-bar{
+	transition: 1s;
+}
+.main-progress span{
+	display: block;
+	float: left;
+}
+
+.wrap-1{
+  width:10.0rem;
+  height:100vh;
+  background:rgb(121,198,233);
+  position: relative;
+  background-repeat:no-repeat;
+  animation: myBack 1s ease forwards;
+  -webkit-animation: myBack 0.6s ease forwards;
+  -ms-animation: myBack 0.6s ease forwards;
+}
+
+
+
+/*-------------添加背景--------------*/
+@keyframes myBack{
+	100%{
+		 background: url(../images/back.png);
+		 background-size: 100% 100%;	
+		 background-repeat: no-repeat;
+	 }
+
+}
+@-webkit-keyframes myBack{
+  100%{
+     background: url(../images/back.png);
+     background-size: 100% 100% ; 
+     background-repeat: no-repeat;
+  }
+
+}
+@-ms-keyframes myBack{
+  100%{
+     background: url(../images/back.png);
+     background-size: 100% 100%; 
+     background-repeat: no-repeat;
+  }
+
+}
+/*--------------------白色带--------------------*/
+.cloud img{
+	position: absolute;
+}
+.left-cloud{
+   top:2.78125rem;
+   left:-6.03125rem;
+   width: 6.03125rem;
+   height: 4.515625rem;
+   opacity: 0.2;
+    animation: leftcloud 1s ease-in forwards;
+  -webkit-animation: leftcloud 1s ease-in forwards;
+
+}
+@keyframes leftcloud{
+	100%{
+		left:0;
+		opacity: 1;
+	}
+}
+@-webkit-keyframes leftcloud{
+	100%{
+		left:0;
+		opacity: 1;
+	}
+}
+@-moz-keyframes leftcloud{
+	100%{
+		left:0;
+		opacity: 1;
+	}
+}
+@-o-keyframes leftcloud{
+	100%{
+		left:0;
+		opacity: 1;
+	}
+}
+@-ms-keyframes leftcloud{
+	100%{
+		left:0;
+		opacity: 1;
+	}
+}
+
+
+.right-cloud{
+	top:6.46875rem;
+	right:-6.34375rem;
+	width:6.34375rem;
+	height:4.609375rem;
+	opacity: 0.2;
+	animation: rightcloud 1s ease forwards;
+  -webkit-animation: rightcloud 1s ease forwards;
+}
+@keyframes rightcloud{
+	100%{
+		right:-0.3125rem;
+		opacity: 1;
+	}
+}
+@-webkit-keyframes rightcloud{
+	100%{
+		right:-0.3125rem;
+		opacity: 1;
+	}
+}
+@-moz-keyframes rightcloud{
+	100%{
+		right:-0.3125rem;
+		opacity: 1;
+	}
+}
+@-ms-keyframes rightcloud{
+	100%{
+		right:-0.3125rem;
+		opacity: 1;
+	}
+}
+@-o-keyframes rightcloud{
+	100%{
+		right:-0.3125rem;
+		opacity: 1;
+	}
+}
+
+
+.wrap-1-top{
+  position: absolute;
+  width:3.5rem;
+  height: 3.125rem; 
+  top: 4.6875rem;
+  left: 3.25rem;
+}
+.wrap-1-top img{
+	width: 100%;
+	height: 100%;
+}
+/*---------------中间的文字--------------------*/
+.wrap-1-center{
+  width: 5.65625rem;
+  height: 1.75rem;
+  position: absolute;
+  top: 8.53125rem;
+  left: 2.171875rem;
+  text-align: center;
+}
+.wrap-1-center ul{
+	width: 100%;
+	height: 100%;
+}
+.wrap-1-center ul li{
+	font-size: 0.375rem;
+	color: #fff;
+
+}
+
+.wrap-1-center ul .center-font{
+   color: #ecb626;
+   font-weight: bold;
+
+}
+/*底部信息*/
+.wrap-1-bottom{
+	position: absolute;
+	text-align: center;
+	bottom: 1.03125rem;
+    left: 2.265625rem;
+    width: 5.46875rem;
+    font-size: 0.375rem;
+	color: #fff;
+}
+.wrap-1-bottom .center-font{
+	 color: #ecb626;
+    font-weight: bold;
+} 
+.wrap-1-bottom .topscroll{
+	padding-top: 0.5625rem;
+	-webkit-animation:topscroll 1s ease infinite;
+	-moz-animation:topscroll 1s ease infinite;
+	-o-animation:topscroll 1s ease infinite;
+	-ms-animation:topscroll 1s ease infinite;
+	animation:topscroll 1s ease infinite;
+}
+@keyframes topscroll{
+   0%{transform: translateY(0,8px,0);}
+   50%{transform: translateY(0,-8px,0);}
+   0%{transform: translate3d(0,8px,0);}
+}
+@-webkit-keyframes topscroll{
+   0%{transform: translateY(8px);}
+   50%{transform: translateY(-8px);}
+   0%{transform: translateY(8px);}
+}
+
+/*---------------------第二、三、四、五个界面背景--------------------*/
+/*背景图片*/
+.common-back{
+	background: url(../images/back.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+
+}
+/*---------------------第二个界面--------------------*/
+.wrap-2{
+   
+     position: relative;
+     overflow: hidden;
+
+}
+.wrap-2-center{
+	width: 2.59375rem;
+	height:10.78125rem;
+	margin: 0 auto;
+	padding-top:10.3vh;
+	text-align: center;
+	/*border: 0.0625rem solid red;*/
+}
+.wrap-2-center .beau-china{
+	width: 4.53125rem;
+	height:65.67vh;
+	text-align: center;
+	vertical-align: middle;
+}
+#canvas{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+/*-----------------------第三个页面-----------------------*/
+.wrap-3{
+  width: 100%;
+  height: 100%;
+}
+.wrap-3-header{
+	width: 100%;
+	height:1.859375rem;
+	margin: 0 auto;
+	margin-bottom:0.3125rem; 
+	text-align: center;
+}
+.wrap-3-header .v-line{
+	width: 0.03125rem;
+	/*height:0.359375rem;*/
+	margin: 0 auto;
+	background: #fff;
+	animation: moveHeight 2s ease forwards;
+	-webkit-animation: moveHeight 2s ease forwards;
+}
+.wrap-3-header img{
+  display:block;
+   width:0.28125rem;
+   height:0.28125rem;
+   opacity: 0;
+   margin: 0 auto;
+   animation: wrapThird 1s ease 2s infinite;
+   -webkit-animation: wrapThird 1s ease 2s infinite;
+}
+@keyframes moveHeight{
+	0%{
+		height: 0.1rem;
+	}
+	50%{
+		height: 0.2rem;
+
+	}
+	100%{
+		height:1.53125rem;
+	}
+}
+@-webkit-keyframes moveHeight{
+	0%{
+		height: 0.1rem;
+	}
+	50%{
+		height: 0.2rem;
+
+	}
+	100%{
+		height:1.53125rem;
+	}
+}
+@-webkit-keyframes moveHeight{
+	0%{
+		height: 0.1rem;
+	}
+	50%{
+		height: 0.2rem;
+
+	}
+	100%{
+		height:1.53125rem;
+	}
+}
+@keyframes wrapThird{
+	0%{
+		opacity: 0.8;
+	}
+	50%{
+		opacity: 0.9;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@-webkit-keyframes wrapThird{
+	0%{
+		opacity: 0.8;
+	}
+	50%{
+		opacity: 0.9;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.wrap-3-content{
+	width:100%;
+	height: 11.96875rem;
+	margin: 0 auto;
+	text-align: center;
+}
+.wrap-3-content img{
+	width: 8.453125rem;
+	margin: 0 auto;
+}
+
+/*----------------------第四个页面------------------------*/
+.wrap-4{
+    position: relative;
+     overflow: hidden;
+}
+.wrap-4-center{
+   width: 2.546875rem;
+   height: 65.67vh;
+   margin: 0 auto;
+  padding-top:10.3vh;
+  text-align: center;
+}
+.wrap-4-center .main-poster{
+	width: 100%;
+    height:100%;
+}
+.main-year{text-align: left;width: 2.546875rem;height: 0.953125rem;margin: 0 auto;margin-left: 2.4375rem;}
+.year{
+	width: 100%;
+	height: 100%;
+}
+#canvas2{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+/*------------------------第五个页面------------------------*/
+.wrap-5{
+  
+}
+/*-------------------------第六个页面-----------------------*/
+.wrap-6{
+    position: relative;
+    overflow: hidden;
+}
+.wrap-6-center{
+	  width: 3.234375rem;
+	  height: 65.67vh;
+	  margin: 0 auto;
+	  padding-top:10.3vh;
+
+}
+.wrap-6-center .main-poster{
+	width: 100%;
+	height: 100%;
+}
+.main-yearS{
+	width: 2.546875rem;height:5.86vh;margin: 0 auto;margin-left: 2.4375rem;
+	position: absolute;
+	right:1.0rem;
+	bottom:32.16vh;
+}
+#canvas3{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+/*-------------------------第七个页面-----------------------*/
+.wrap-7{
+   position: relative;
+
+}
+.backBlack{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color:rgba(13,13,13,0.9);
+}
+.canaleSelect{
+    position: absolute;
+    right: 1.5625rem;
+    top: 0.78125rem;
+	font-size: 0.46875rem;
+	color: #fff;
+
+}
+/*左边的滚动条*/
+.wrap-7-left{
+   position: absolute;
+   width:0.359375rem;
+   height:9.46875rem;
+   bottom: 0;
+   left:0.15625rem;
+   text-align: center;
+
+}
+.wrap-7-left img{
+	width: 100%;
+	height: 0.46875rem;
+}
+.wrap-7-left .lineMap{
+	width: 0.03125rem;
+	background: #fff;
+	height: 9.0rem;
+	margin: 0 auto;
+}
+.wrap-7-center{
+	position: absolute;
+	width: 8.75rem;
+	height: 12.375rem;
+	/*background: red;*/
+	top: 2.46875rem;
+	left:0.625rem;
+}
+.wrapper-content{
+	width: 100%;
+	height: 100%;
+	position:relative;
+}
+.wrap-7-center img{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   left: 0;
+   top: 0;
+   -moz-transform-origin: 100% 100%;
+  -webkit-transform-origin:100% 100%;
+   -o-transform-origin:100% 100%;
+
+}
+/*.wrap-7-center img:nth-child(1){
+   transform:skew(2deg,1deg);
+
+}
+.wrap-7-center img:nth-child(2){
+   transform:skew(-2deg,2deg);
+
+}
+.wrap-7-center img:nth-child(3){
+   transform:skew(-1deg,1deg);
+}
+*/
+.wrap-7-center .moveImg{
+
+	animation: moveCarousel 1s ease forwards;
+	-webkit-animation: moveCarousel 1s ease forwards;
+	-ms-animation: moveCarousel 1s ease forwards;
+}
+.wrap-7-center .backImg{
+	animation: backCarousel 1s ease forwards;
+	-webkit-animation: backCarousel 1s ease forwards;
+	-ms-animation: backCarousel 1s ease forwards;
+}
+.wrap-7-center #secondImg{
+    animation: movesecond 1s ease forwards;
+	-webkit-animation: movesecond 1s ease forwards;
+	-ms-animation: movesecond 1s ease forwards;
+}
+.wrap-7-center #thirdImg{
+    animation: movethird 1s ease forwards;
+	-webkit-animation: movethird  1s ease forwards;
+	-ms-animation: movethird  1s ease forwards;
+}
+@keyframes moveCarousel{
+
+	0%{
+		transform: translateY(0);
+	}
+	50%{
+		transform: rotateZ(-10deg);
+		
+	}
+    100%{
+		transform: translateX(-10.4rem);
+	}
+}
+@-webkit-keyframes moveCarousel{
+
+	0%{
+		transform: translateY(0);
+	}
+	50%{
+		transform: rotateZ(-10deg);
+		
+	}
+    100%{
+		transform: translateX(-10.4rem);
+	}
+}
+@-moz-keyframes moveCarousel{
+
+	0%{
+		transform: translateY(0);
+	}
+	50%{
+		transform: rotateZ(-10deg);
+		
+	}
+    100%{
+		transform: translateX(-10.4rem);
+	}
+}
+
+
+/*图片回来*/
+@keyframes backCarousel{
+
+	0%{
+		transform: translateX(-10.4rem);
+	}
+    100%{
+		transform: translateX(0rem);
+	}
+}
+/*@-webkit-keyframes backCarousel{
+
+	0%{
+		transform: translateY(0);
+	}
+	50%{
+		transform: rotateZ(-10deg);
+		
+	}
+    100%{
+		transform: translateX(-10.4rem);
+	}
+}
+@-moz-keyframes backCarousel{
+
+	0%{
+		transform: translateY(0);
+	}
+	50%{
+		transform: rotateZ(-10deg);
+		
+	}
+    100%{
+		transform: translateX(-10.4rem);
+	}
+}
+*/
+
+/*后边两个对象的改变*/
+@keyframes movesecond{
+
+	0%{
+		transform: translateY(0);
+	}
+	100%{
+		transform: rotateZ(-5deg);
+		
+	}
+    /*100%{
+		transform: translateX(-8rem);
+	}*/
+}
+@-webkit-keyframes movesecond{
+
+	0%{
+		transform: translateY(0);
+	}
+	100%{
+		transform: rotateZ(-5deg);
+		
+	}
+   /* 100%{
+		transform: translateX(-8rem);
+	}*/
+}
+@-moz-keyframes movesecond{
+
+	0%{
+		transform: translateY(0);
+	}
+	100%{
+		transform: rotateZ(-5deg);
+		
+	}
+   /* 100%{
+		transform: translateX(-8rem);
+	}*/
+}
+/*第三个*/
+@keyframes movethird{
+
+	0%{
+		transform: translateY(0);
+	}
+	50%{
+		transform: rotateZ(-3deg);
+		
+	}
+   /* 100%{
+		transform: translateX(-8rem);
+	}*/
+}
+/*-------------------------第八个页面-----------------------*/
+.wrap-8{
+    position: relative;
+    overflow: hidden;
+}
+.main-8-year{
+   text-align:center;
+   margin: 0 auto;
+   padding-top: 1.92vh;
+}
+#canvas4{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+/*-------------------------第九个页面-----------------------*/
+.wrap-9{
+    position: relative;
+    overflow: hidden;
+}
+
+.wrap-9-vedio{
+	position: relative;
+	width: 9.734375rem;
+	/*height: 4.28125rem;*/
+     
+	/*padding-bottom:56.25%;*/
+	margin: 0 auto;
+	margin-top: 4.265625rem;
+}
+
+.wrap-9-vedio #vedio{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+.wrap-9-adver{
+	position: absolute;
+	width: 5.625rem;
+	left: 0.65625rem;
+	bottom: 7.40625rem; 
+}
+.wrap-9-adver img{
+    width: 100%
+}
+.beautifulChina{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+.beautifulChina img{
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
